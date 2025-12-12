@@ -1,12 +1,15 @@
+
 deployAs:
-  - name: my-new-custom-application-project
+  - name: helloWorldMcApp
     applicationType: merchant-center-custom-application
     configuration:
       standardConfiguration:
-        - key: CTP_PROJECT_KEY
-          description: Project key of the commercetools Project
+        - key: CUSTOM_APPLICATION_ID
+          description: The Custom Application ID is provided when you add a Custom Application in the Merchant Center
           required: true
-        - key: CTP_REGION
-          description: Region of the commercetools Project (e.g. gcp-eu)
-          required: true
+        - key: CLOUD_IDENTIFIER
+          description: The identifier of the cloud Region that the Custom Application uses (maps to MC API URL)
           default: 'gcp-eu'
+        - key: ENTRY_POINT_URI_PATH
+          description: The Application entry point URI path identified during registration of the Custom Application
+          required: true
