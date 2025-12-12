@@ -1,7 +1,7 @@
 
 deployAs:
   - name: helloWorldMcApp
-    applicationType: merchant-center-custom-application
+    applicationType: my-new-custom-application-project
     configuration:
       standardConfiguration:
         - key: CUSTOM_APPLICATION_ID
